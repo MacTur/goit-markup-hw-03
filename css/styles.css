@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --brand-color1: rgba(46, 47, 66, 1);
+  --brand-color2: rgba(77, 90, 229, 1);
+  --brand-color3: rgba(67, 68, 85, 1);
+  --brand-color4: rgba(244, 244, 253, 1);
+  --brand-color5: rgba(255, 255, 255, 1);
+  --brand-color6: rgba(64, 75, 191, 1);
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  color: var(--brand-color1);
+}
+
+.company-logo {
+  text-decoration: none;
+  font-family: "raleway";
+}
+
+.logo-part-darkbg {
+  color: var(--brand-color4);
+}
+
+.logo-part-lightbg {
+  color: var(--brand-color1);
+}
+
+.site-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--navyblue, #2e2f42);
+}
+
+.site-links a:hover,
+.site-links a:focus {
+  color: var(--brand-color6);
+  text-decoration: underline;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--slate, #434455);
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  color: var(--brand-color6);
+}
+
+.main-title {
+  color: var(--brand-color5);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 107.143%;
+}
+
+.main-title-bg {
+  background-color: var(--brand-color1);
+}
+
+.order-button {
+  color: var(--brand-color5);
+  background-color: var(--brand-color2);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--brand-color6);
+}
+
+.filter-buttons button {
+  color: var(--brand-color5);
+  background-color: var(--brand-color2);
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.filter-buttons button:focus,
+.filter-buttons button:hover {
+  background-color: var(--brand-color6);
+}
+
+.titles {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 111.111%;
+}
+
+.team-names,
+.features,
+.project-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.description,
+.project-card-description {
+  color: var(--brand-color3);
+  font-size: 16px;
+  line-height: 150%;
+}
