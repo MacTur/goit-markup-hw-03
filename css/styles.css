@@ -14,9 +14,39 @@ body {
   color: var(--brand-color1);
 }
 
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding-inline: 15px;
+}
+
+.header-wrapper {
+  display: flex;
+  height: 72px;
+  border-bottom: 1px solid var(--brand-color4);
+  background: var(--brand-color5);
+}
+
 .company-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-decoration: none;
   font-family: "raleway";
+  padding-right: 76px;
 }
 
 .logo-part-darkbg {
@@ -35,6 +65,13 @@ body {
   color: var(--navyblue, #2e2f42);
 }
 
+.site-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
 .site-links a:hover,
 .site-links a:focus {
   color: var(--brand-color6);
@@ -42,10 +79,20 @@ body {
 }
 
 .contact-links a {
+  display: flex;
   text-decoration: none;
+
   font-size: 16px;
   line-height: 150%;
   color: var(--slate, #434455);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 40px;
 }
 
 .contact-links a:hover,
@@ -58,24 +105,38 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 107.143%;
+  text-align: center;
 }
 
 .main-title-bg {
   background-color: var(--brand-color1);
+  height: 600px;
 }
 
 .order-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--brand-color5);
   background-color: var(--brand-color2);
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .order-button:hover,
 .order-button:focus {
   background-color: var(--brand-color6);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
 }
 
 .filter-buttons button {
@@ -94,21 +155,67 @@ body {
 }
 
 .titles {
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 111.111%;
 }
 
 .team-names,
-.features,
+.feature-title span,
 .project-card-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
 }
+
+.team {
+  text-align: center;
+}
+
 .description,
 .project-card-description {
   color: var(--brand-color3);
   font-size: 16px;
   line-height: 150%;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.capabilities {
+  display: flex;
+}
+
+.team {
+  display: flex;
+}
+
+.footer-description {
+  color: var(--brand-color4);
+}
+
+.footer-wraper {
+  background-color: var(--brand-color1);
+  height: 312px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  text-align: left;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.cards figure {
+  margin: 0;
+}
+
+.cards figcaption {
+  padding: 0px 16px;
+  margin: 32px 0px;
 }
