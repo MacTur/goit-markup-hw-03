@@ -7,6 +7,7 @@
   --brand-color4: rgba(244, 244, 253, 1);
   --brand-color5: rgba(255, 255, 255, 1);
   --brand-color6: rgba(64, 75, 191, 1);
+  --brand-color7: rgba(231, 233, 252, 1);
 }
 
 body {
@@ -30,7 +31,9 @@ p {
 
 .container {
   max-width: 1158px;
-  padding-inline: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
 }
 
 .header-wrapper {
@@ -46,7 +49,8 @@ p {
   align-items: center;
   text-decoration: none;
   font-family: "raleway";
-  padding-right: 76px;
+  margin-right: 76px;
+  padding-left: 106px;
 }
 
 .logo-part-darkbg {
@@ -80,8 +84,8 @@ p {
 
 .contact-links a {
   display: flex;
-  text-decoration: none;
 
+  text-decoration: none;
   font-size: 16px;
   line-height: 150%;
   color: var(--slate, #434455);
@@ -89,9 +93,8 @@ p {
 
 .contact-links {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 
+  align-items: center;
   gap: 40px;
 }
 
@@ -101,28 +104,35 @@ p {
 }
 
 .main-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  text-align: center;
   color: var(--brand-color5);
   font-size: 56px;
   font-weight: 700;
   line-height: 107.143%;
-  text-align: center;
+  max-width: 496px;
 }
 
 .main-title-bg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--brand-color1);
   height: 600px;
 }
 
 .order-button {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  align-self: center;
   color: var(--brand-color5);
   background-color: var(--brand-color2);
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
+  margin-top: 48px;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -137,21 +147,29 @@ p {
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filter-buttons button {
-  color: var(--brand-color5);
-  background-color: var(--brand-color2);
+  color: var(--brand-color2);
+  background-color: var(--brand-color4);
   cursor: pointer;
   font-size: 16px;
-  font-size: 16px;
+  border: 1px solid var(--brand-color7);
+  border-radius: 4px;
+  padding: 12px 24px;
   font-weight: 500;
   line-height: 150%;
 }
 
 .filter-buttons button:focus,
 .filter-buttons button:hover {
+  color: var(--brand-color5);
   background-color: var(--brand-color6);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .titles {
@@ -170,7 +188,13 @@ p {
 }
 
 .team {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+}
+
+.team figure {
+  margin: 0;
 }
 
 .description,
@@ -178,15 +202,20 @@ p {
   color: var(--brand-color3);
   font-size: 16px;
   line-height: 150%;
+  letter-spacing: 0.32px;
 }
 
-.features {
+.features,
+.feature-title p {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .capabilities {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .team {
@@ -195,6 +224,7 @@ p {
 
 .footer-description {
   color: var(--brand-color4);
+  padding-left: 106px;
 }
 
 .footer-wraper {
@@ -218,4 +248,8 @@ p {
 .cards figcaption {
   padding: 0px 16px;
   margin: 32px 0px;
+}
+
+.project-card-title {
+  margin-bottom: 8px;
 }
