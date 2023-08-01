@@ -36,8 +36,14 @@ p {
   margin: 0px;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .header-wrapper {
   display: flex;
+  flex-wrap: wrap;
   height: 72px;
   border-bottom: 1px solid var(--brand-color4);
   background: var(--brand-color5);
@@ -50,7 +56,6 @@ p {
   text-decoration: none;
   font-family: "raleway";
   margin-right: 76px;
-  padding-left: 106px;
 }
 
 .logo-part-darkbg {
@@ -71,6 +76,7 @@ p {
 
 .site-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 40px;
@@ -84,7 +90,6 @@ p {
 
 .contact-links a {
   display: flex;
-
   text-decoration: none;
   font-size: 16px;
   line-height: 150%;
@@ -93,7 +98,8 @@ p {
 
 .contact-links {
   display: flex;
-
+  flex-wrap: wrap;
+  margin-left: auto;
   align-items: center;
   gap: 40px;
 }
@@ -145,6 +151,7 @@ p {
 
 .filter-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   align-items: flex-start;
   justify-content: center;
@@ -177,6 +184,7 @@ p {
   font-size: 36px;
   font-weight: 700;
   line-height: 111.111%;
+  margin-bottom: 72px;
 }
 
 .team-names,
@@ -187,14 +195,28 @@ p {
   line-height: 120%;
 }
 
+.light-bg {
+  background-color: var(--brand-color4);
+}
+
 .team {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
+.team figcaption {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team figure {
   margin: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .description,
@@ -204,7 +226,10 @@ p {
   line-height: 150%;
   letter-spacing: 0.32px;
 }
-
+.features {
+  gap: 24px;
+  padding-top: 120px;
+}
 .features,
 .feature-title p {
   display: flex;
@@ -222,14 +247,23 @@ p {
   display: flex;
 }
 
+.footer-bg {
+  background-color: var(--brand-color1);
+}
+
 .footer-description {
+  display: flex;
+  max-width: 264px;
+  margin-top: 17.5px;
   color: var(--brand-color4);
-  padding-left: 106px;
 }
 
 .footer-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 312px;
   background-color: var(--brand-color1);
-  height: 312px;
 }
 
 .cards {
@@ -239,6 +273,8 @@ p {
   text-align: left;
   flex-shrink: 0;
   justify-content: space-between;
+  row-gap: 48px;
+  margin-bottom: 120px;
 }
 
 .cards figure {
@@ -246,8 +282,10 @@ p {
 }
 
 .cards figcaption {
-  padding: 0px 16px;
-  margin: 32px 0px;
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--brand-color7);
+  border-left: 1px solid var(--brand-color7);
+  border-right: 1px solid var(--brand-color7);
 }
 
 .project-card-title {
