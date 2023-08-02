@@ -118,24 +118,25 @@ header {
   color: var(--brand-color6);
 }
 
-.main-title {
+.hero {
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
-  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.main-title {
   color: var(--brand-color5);
   font-size: 56px;
   font-weight: 700;
   line-height: 107.143%;
   max-width: 496px;
+  text-align: center;
 }
 
 .main-title-bg {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: var(--brand-color1);
-  height: 600px;
 }
 
 .order-button {
@@ -252,6 +253,8 @@ header {
 
 .features p {
   padding-top: 8px;
+  max-width: 264px;
+  letter-spacing: 0.2px;
 }
 
 .capabilities {
