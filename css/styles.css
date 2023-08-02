@@ -59,6 +59,7 @@ header {
 
 .company-logo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
@@ -99,6 +100,7 @@ header {
 
 .contact-links a {
   display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
   font-size: 16px;
   line-height: 150%;
@@ -214,6 +216,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
+  row-gap: 24px;
 }
 
 .team figcaption {
@@ -262,10 +265,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0px;
-}
-
-.team {
-  display: flex;
+  row-gap: 24px;
 }
 
 .footer-bg {
